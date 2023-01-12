@@ -1,0 +1,222 @@
+/* ================ GENERAL ================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --background: "#F2F2F2"
+
+  --nav-height: 8rem;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+
+  background-color: var(--background);
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  width: min(120rem, 100%);
+  margin-inline: auto;
+  padding-inline: 2.4rem;
+}
+
+/* ================ NAV ================ */
+
+nav {
+  padding: 3rem 0rem;
+  border-bottom: 1px solid gray;
+}
+
+nav .wrapper {
+  height: var(--nav-height);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .wrapper ul {
+  display: flex;
+  gap: 2rem;
+}
+
+nav .wrapper ul>li {
+  border: 1px solid gray;
+  color: gray;
+  padding: 0.5rem 2rem;
+  border-radius: 4rem;
+}
+
+#navClimate {
+  display: flex;
+  gap: 2rem;
+  width: 25rem;
+  align-items: center;
+}
+
+#navClimate p {
+  color: gray;
+}
+
+/* ================ ASIDE ================ */
+
+main {
+  border-bottom: 1px solid gray;
+}
+
+#mainDiv {
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+
+aside {
+  border-right: solid 1px gray;
+  border-bottom: 1px solid gray;
+  border-left: 1px solid gray;
+}
+
+aside hr {
+  color: black;
+  width: 3.5rem;
+  background-color: black;
+  height: 0.3rem;
+}
+
+
+#mainDiv aside h3 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+#mainDiv  h5 {
+  color: cadetblue;
+  margin-bottom: 1rem;
+}
+
+#mainDiv  span {
+  color: gray;
+  margin-left: 1rem;
+}
+
+#mainDiv aside h2 {
+  margin-bottom: 2.5rem;
+}
+
+#mainDiv aside hr {
+  margin-bottom: 3rem;
+}
+
+/* ================ MAIN ================ */
+
+#mainDivArticle {
+  display: grid;
+  grid-template-columns: 66% 34%;
+}
+
+#mainArticle h1 {
+  font-size: 5rem;
+}
+
+#mainArticle h5 {
+  margin-top: 5rem;
+}
+
+#mainArticleContainer {
+  padding: 2rem;
+}
+
+#mainImgContainer {
+  background-color: gray;
+  width: 100%;
+  height: 40rem;
+}
+
+#mainAside {
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+#mainAside h5 {
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+#mainAside h2 {
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+}
+
+#mainAside span {
+  margin-left: 2rem;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+#mainAside p {
+  margin-bottom: 10rem;
+  margin-left: 2rem;
+  color: gray;
+}
+
+.mainAsideBorder {
+  border-bottom: 1px solid gray;
+}
+
+#articleImgConatiner {
+  background-color: gray;
+  width: 90%;
+  height: 20rem;
+  margin: 2rem;
+}
+
+#mainTwoArticles {
+  display: flex;
+  margin-top: 4.35rem;
+  border-top: 1px solid gray;
+}
+
+#mainTwoArticles h5{
+  margin-inline: 2rem;
+  margin-top: 0;
+}
+
+#mainTwoArticles h2{
+  margin-inline: 2rem;
+  margin-bottom: 2rem;
+}
+
+#mainTwoArticles p{
+  margin-inline: 2rem;
+  margin-bottom: 3rem;
+  color: gray;
+}
+
+#mainTwoArticles span{
+  margin-inline: 2rem;
+}
+
+#articleSideFinal p{
+  margin-bottom: 5rem
+}
+
+#secondArticleBorder {
+  border-left: 1px solid gray;
+}
